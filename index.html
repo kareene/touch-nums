@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Touch the Numbers</title>
+</head>
+<body onload="initPage()">
+    <h1>Touch the Numbers</h1>
+    <button onclick="initPage()">New Game</button>
+    <div class ="level">
+        <p>Choose Your Level:</p>
+        <form action="">
+            <input type="radio" name="level" value="16" onclick="changeLevel('easy')" checked="checked">Easy (16)
+            <input type="radio" name="level" value="25" onclick="changeLevel('hard')">Hard (25)
+            <input type="radio" name="level" value="36" onclick="changeLevel('extreme')">Extreme! (36)
+        </form>
+    </div>
+    <div class ="box">
+        <p>Game Time:</p>
+        <p class="timer">00:00.000</p>
+    </div>
+    <div class ="box">
+        <p>Next Number:</p>
+        <p class="next">1</p>
+    </div>
+    <table><tbody class="board"></tbody></table>
+    <script src="js/main.js"></script>
+</body>
+</html>
